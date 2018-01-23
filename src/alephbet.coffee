@@ -1,6 +1,7 @@
 utils = require('./utils')
 adapters = require('./adapters')
 options = require('./options')
+store = require('store')
 
 class AlephBet
   @options = options
@@ -9,6 +10,7 @@ class AlephBet
   @GimelAdapter = adapters.GimelAdapter
   @PersistentQueueGoogleAnalyticsAdapter = adapters.PersistentQueueGoogleAnalyticsAdapter
   @PersistentQueueKeenAdapter = adapters.PersistentQueueKeenAdapter
+  @store = store
 
   class @Experiment
     @_options:
